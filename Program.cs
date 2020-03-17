@@ -14,6 +14,7 @@ namespace Soma2Numeros
             int auau = Int32.Parse(outro);
             int resultado = conversão + auau;
             Console.WriteLine(resultado);
+            Console.ReadKey();
             
         }
     }
