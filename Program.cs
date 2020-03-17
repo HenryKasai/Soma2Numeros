@@ -13,7 +13,7 @@ namespace Soma2Numeros
             string outro = Console.ReadLine();
             int auau = Int32.Parse(outro);
             int resultado = conversão + auau;
-            Console.WriteLine(resultado);
+            Console.WriteLine("Soma dos números:" + resultado);
             Console.ReadKey();
             
         }
