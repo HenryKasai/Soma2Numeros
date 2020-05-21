@@ -6,15 +6,19 @@ namespace Soma2Numeros
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Digite um número.");
-            string número = Console.ReadLine();
-            int conversão = Int32.Parse(número);
+            string xstring = Console.ReadLine();
+            double xdouble = Convert.ToDouble(xstring);
             Console.WriteLine("Digite outro número.");
-            string outro = Console.ReadLine();
-            int auau = Int32.Parse(outro);
-            int resultado = conversão + auau;
-            Console.WriteLine("Soma dos números:" + resultado);
+            string ystring = Console.ReadLine();
+            double ydouble = Convert.ToDouble(ystring);
+            double resultado = xdouble + ydouble;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Soma dos números: { resultado}");
             Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.Gray;
+
             
         }
     }
